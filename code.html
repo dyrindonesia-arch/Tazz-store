@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tazz Store - Toko Akun Premium & Joki ML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #ffd6e0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, #ff4d8d, #ff80ab);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .product-title {
+            color: #ff4d8d;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ffe0e6;
+            padding-bottom: 10px;
+        }
+        
+        .price-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff5f7;
+            padding: 12px 15px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #ff4d8d;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #ff4d8d;
+            font-size: 1.2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #ff80ab;
+            box-shadow: 0 0 0 2px rgba(255, 128, 171, 0.2);
+        }
+        
+        .btn {
+            background: linear-gradient(to right, #ff4d8d, #ff80ab);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(to right, #ff3380, #ff66a3);
+            box-shadow: 0 4px 12px rgba(255, 77, 141, 0.3);
+        }
+        
+        .payment-info {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .payment-title {
+            color: #ff4d8d;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #ff4d8d;
+        }
+        
+        .warning {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+            }
+            
+            .product-card {
+                max-width: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tazz Store</h1>
+            <p class="tagline">Toko Akun Premium & Jasa Joki Terpercaya</p>
+        </header>
+        
+        <div class="products">
+            <div class="product-card">
+                <h2 class="product-title">Alight Motion Premium</h2>
+                
+                <div class="price-option">
+                    <span>1 Tahun</span>
+                    <span class="price">Rp 15.000</span>
+                </div>
+                
+                <div class="price-option">
+                    <span>Seumur Hidup</span>
+                    <span class="price">Rp 40.000</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="alight-email">Email Akun Google</label>
+                    <input type="email" id="alight-email" placeholder="Masukkan email akun Google Anda">
+                </div>
+                
+                <div class="form-group">
+                    <label for="alight-password">Password Akun Google</label>
+                    <input type="password" id="alight-password" placeholder="Masukkan password akun Google Anda">
+                </div>
+                
+                <button class="btn" onclick="orderAlightMotion()">Beli Sekarang</button>
+                
+                <div class="warning">
+                    Setelah pembayaran, data login akan dikirim ke nomor 085709518077
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <h2 class="product-title">Joki Mobile Legends</h2>
+                
+                <div class="form-group">
+                    <label for="ml-rank">Pilih Rank Tujuan</label>
+                    <select id="ml-rank">
+                        <option value="epic">Epic ⭐ - Rp 4.000</option>
+                        <option value="legend">Legend ⭐ - Rp 5.000</option>
+                        <option value="mythic">Mythic ⭐ - Rp 8.000</option>
+                        <option value="honor">Honor ⭐ - Rp 11.000</option>
+                        <option value="glory">Glory ⭐ - Rp 15.000</option>
+                        <option value="immortal">Immortal ⭐ - Rp 20.000</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ml-method">Metode Login</label>
+                    <select id="ml-method">
+                        <option value="moonton">Moonton</option>
+                        <option value="google">Google</option>
+                        <option value="facebook">Facebook</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ml-email">Email/ID Akun</label>
+                    <input type="text" id="ml-email" placeholder="Masukkan email/ID akun ML Anda">
+                </div>
+                
+                <div class="form-group">
+                    <label for="ml-password">Password</label>
+                    <input type="password" id="ml-password" placeholder="Masukkan password akun ML Anda">
+                </div>
+                
+                <button class="btn" onclick="orderJokiML()">Pesan Joki</button>
+                
+                <div class="warning">
+                    Setelah pembayaran, data login akan dikirim ke nomor 085709518077
+                </div>
+            </div>
+        </div>
+        
+        <div class="payment-info">
+            <h2 class="payment-title">Informasi Pembayaran</h2>
+            <p>Transfer pembayaran ke:</p>
+            <p><strong>DANA: 085709518077</strong></p>
+            <p>Setelah transfer, screenshot bukti transfer dan data login akan otomatis dikirim ke nomor tersebut.</p>
+            
+            <div class="contact-info">
+                Untuk pertanyaan dan masalah lainnya, hubungi: <strong>085709518077</strong>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function orderAlightMotion() {
+            const email = document.getElementById('alight-email').value;
+            const password = document.getElementById('alight-password').value;
+            
+            if (!email || !password) {
+                alert('Harap isi email dan password dengan lengkap!');
+                return;
+            }
+            
+            alert('Terima kasih! Silakan transfer pembayaran ke DANA: 085709518077. Data login akan otomatis dikirim setelah pembayaran diterima.');
+            
+            // Reset form
+            document.getElementById('alight-email').value = '';
+            document.getElementById('alight-password').value = '';
+        }
+        
+        function orderJokiML() {
+            const rank = document.getElementById('ml-rank').value;
+            const method = document.getElementById('ml-method').value;
+            const email = document.getElementById('ml-email').value;
+            const password = document.getElementById('ml-password').value;
+            
+            if (!email || !password) {
+                alert('Harap isi email/ID dan password dengan lengkap!');
+                return;
+            }
+            
+            alert('Terima kasih! Silakan transfer pembayaran ke DANA: 085709518077. Data login akan otomatis dikirim setelah pembayaran diterima.');
+            
+            // Reset form
+            document.getElementById('ml-email').value = '';
+            document.getElementById('ml-password').value = '';
+        }
+    </script>
+</body>
+</html>
